@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/84fac9f249.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header section------------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a class="logo" href="">Sris-T.</a>
+                <ul id="sideMenu">
+                    <li>
+                        <a class="nav-items" href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-items" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-items" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="nav-items" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="nav-items" href="#contact">Contact</a>
+                    </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Engineer</p>
+                <h1 class="h1-header">Hey, I'm <span>Srishti</span> <br> Tiwari From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about section------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="about-img" src="images/user1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="title-about">ABOUT ME</h1>
+                    <p>Innovative Programmer striving to make the world a more unified and <br>
+                        connected place. <br>
+                        A creative thinker, looking towards software development. <br>
+                        I am Electronics and communication Engineer. <br>
+                        I am learning Web devlopment and Coding in Java. <br>
+                        I am your story listener. Love old Indian music and writer from heart.
+                    </p>
+                    <div class="tab-about">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                        <p class="tab-links" onclick="opentab('hobbies')"> Hobbies</p>
+
+                    </div>
+                    <div class="about-content active-content" id="skills">
+                        <ul>
+                            <li>Java</li>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
+                            <li>C#</li>
+                        </ul>
+                    </div>
+                    <div class="about-content" id="education">
+                        <ul>
+                            <li><span>Dr. A.P.J. Abdul Kalam Technical University</span> <br>
+                                Electronics and communication Engineering (8.4 CGPA) <br>
+                                2018-2022</li>
+                            <li><span>SJS Public School</span> <br>
+                                Higher secondary school (67%) <br>
+                                2016-2018
+                            </li>
+                            <li><span>SJS Public School</span> <br>
+                                Secondary school (10 CGPA) <br>
+                                2014-2016
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="about-content" id="hobbies">
+                        <ul>
+                            <li>Reading books</li>
+                            <li>Writing stories and peotry</li>
+                            <li>Listening old Indian songs</li>
+                            <li>Exploring technology</li>
+                            <li>Teaching</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services=========================== -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="title-about">MY SERVICES</h1>
+            <div class="service-list">
+                <div>
+                    <i class="icons fa-solid fa-code fa-4x"></i>
+                    <h2>Web Desgin</h2>
+                    <p>Proficient in creating visually stunning websites that are <br> user-friendly and optimized for performance using modern web design principles.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="icons fa-brands fa-java fa-4x"></i>
+                    <h2>Coding in Java</h2>
+                    <p>Skilled in Java programming language, proficient <br> in object-oriented programming, and experienced in developing and debugging Java application. <br> Strong understanding of Interface, Collections and other basic topics . </p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio--------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="title-about">MY WORK</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/iot1.jpg" alt="">
+                    <div class="layer">
+                        <h3>IoT based project</h3>
+                        <p>The major motivation of this project is to reduce the traffic congestion
+                            due to unavailability of parking spaces.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/dev.jpg" alt="">
+                    <div class="layer">
+                        <h3>Website Design</h3>
+                        <p>Static Website where I used HTML, CSS and bootstrap.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/agri.jpg" alt="">
+                    <div class="layer">
+                        <h3>Automated irrigation system</h3>
+                        <p>An automated irrigation system, operation of the system with no
+                            or just a minimum of manual intervention in farming.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- contact--------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title-about">CONTACT ME</h1>
+                    <p>If you have story, poetry or song.. <br> Let`s catchup! <br>
+                        We can code together.</p>
+                    <p> <i class="fa-solid fa-envelope"></i> srishti.ec6@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i> +91-8052597004</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/srishti-tiwari-801795190/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/sris_shivi" target="_blank"><i
+                                class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/sris_shivi/" target="_blank"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="images/SrishtiResume..pdf" download class="btn btn2" target="_blank">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright © 2023 Srishti Tiwari 💗</p>
+        </div>
+    </div>
+<!-- https://script.google.com/macros/s/AKfycbwdoOf37mp02ar1c7lC2t-Ii0gPw879ItBnenVZsupYpn7tnXI80y7se8HQWAckTcY/exec -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
